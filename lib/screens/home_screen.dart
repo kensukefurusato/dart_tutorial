@@ -3,8 +3,8 @@ import 'package:flutter_app/components/home_screen_navbar.dart';
 import 'package:flutter_app/components/lists/exolore_course_list.dart';
 import 'package:flutter_app/components/lists/recent_course_list.dart';
 import 'package:flutter_app/screens/sidebar_screen.dart';
-
 import '../constants.dart';
+import 'continue_watcing_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -105,6 +105,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
           ),
+            ContinueWatchingScreen(),
             IgnorePointer(
               ignoring: sidebarHidden,
               child: Stack(

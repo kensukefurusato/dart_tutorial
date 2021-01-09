@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/components/lists/explore_course_card.dart';
+import 'package:flutter_app/components/cards/explore_course_card.dart';
 import 'package:flutter_app/model/course.dart';
 
 class ExploreCourseList extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/model/course.dart';
 
-import '../constants.dart';
+import '../../constants.dart';
 
 class ContinueWatchingCard extends StatelessWidget {
   ContinueWatchingCard({this.course});

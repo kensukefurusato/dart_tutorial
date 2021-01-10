@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/model/course.dart';
 
-import '../continue_watching_card.dart';
+import '../cards/continue_watching_card.dart';
 
 class ContinueWatchingList extends StatefulWidget {
   @override

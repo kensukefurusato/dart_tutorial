@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/components/searchfield_widget.dart';
 import 'package:flutter_app/components/sidebar_button.dart';
+import 'package:flutter_app/screens/profile_screen.dart';
 
 import '../constants.dart';
 
@@ -25,9 +26,15 @@ class HomeScreenNavBar extends StatelessWidget {
           SizedBox(
             width: 16.0,
           ),
-          CircleAvatar(
-            radius: 18.0,
-            backgroundImage: AssetImage('asset/images/profile.jpg'),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ProfileScreen()),);
+            },
+            child: CircleAvatar(
+              radius: 18.0,
+              backgroundImage: AssetImage('asset/images/profile.jpg'),
+            ),
           ),
         ],
       ),
